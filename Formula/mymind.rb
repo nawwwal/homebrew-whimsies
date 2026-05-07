@@ -5,12 +5,12 @@
 class Mymind < Formula
   desc "The mymind API uses signed per-request JWT bearer tokens. Objects are saved URLs, notes, images, documents, videos, or files. Objects can have tags, spaces, notes, content, blobs, screenshots, and AI-generated metadata."
   homepage "https://github.com/nawwwal/mymind"
-  version "1.3.0"
+  version "1.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nawwwal/mymind/releases/download/v1.3.0/mymind_1.3.0_macos_intel.tar.gz"
-      sha256 "06f5873a4cc9ef6b1a45329c8ec611ad161fe2ac83457dfd6dc034c9d21e5b20"
+      url "https://github.com/nawwwal/mymind/releases/download/v1.3.1/mymind_1.3.1_macos_intel.tar.gz"
+      sha256 "6c36ac6ed6f6bc02dc4b6bb195be4650c64fbb460850482e3591ab431e79023c"
 
       define_method(:install) do
         bin.install "mymind"
@@ -18,8 +18,8 @@ class Mymind < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nawwwal/mymind/releases/download/v1.3.0/mymind_1.3.0_macos_apple_silicon.tar.gz"
-      sha256 "9ea2c475d92b69c0ae049edbb043602b85994945c222e574ef43e5da3a2aac03"
+      url "https://github.com/nawwwal/mymind/releases/download/v1.3.1/mymind_1.3.1_macos_apple_silicon.tar.gz"
+      sha256 "47e6dae01d998b2e7d012061c4f1256cfdf2c420309224a4eb39d0ef29f4f240"
 
       define_method(:install) do
         bin.install "mymind"
@@ -30,16 +30,16 @@ class Mymind < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nawwwal/mymind/releases/download/v1.3.0/mymind_1.3.0_linux_x64.tar.gz"
-      sha256 "d8984938e376c8ee7cd735c7d51093278584a5095b026ce58eeb7380852fdc1a"
+      url "https://github.com/nawwwal/mymind/releases/download/v1.3.1/mymind_1.3.1_linux_x64.tar.gz"
+      sha256 "4de2ab027f2dbf64ec9b1527af431392e2c9c41daf147b14846c7bbadcf58347"
       define_method(:install) do
         bin.install "mymind"
         bin.install "mymind-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nawwwal/mymind/releases/download/v1.3.0/mymind_1.3.0_linux_arm64.tar.gz"
-      sha256 "d29b87297fb570dc92e39ea713b29d2a08d114d7c12c5ca9f1069cf6cd13224c"
+      url "https://github.com/nawwwal/mymind/releases/download/v1.3.1/mymind_1.3.1_linux_arm64.tar.gz"
+      sha256 "c7e841d6ea0a4b520ac7e1f1ea9fe762d744c24506496ae517bf6a2a5d3d2096"
       define_method(:install) do
         bin.install "mymind"
         bin.install "mymind-mcp"
