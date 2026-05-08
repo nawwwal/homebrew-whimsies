@@ -5,12 +5,12 @@
 class Mymind < Formula
   desc "Search and use your mymind library from the terminal and AI agents"
   homepage "https://github.com/nawwwal/mymind"
-  version "1.3.4"
+  version "1.3.5"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nawwwal/mymind/releases/download/v1.3.4/mymind_1.3.4_macos_apple_silicon.tar.gz"
-      sha256 "f92d74c1d782c6c0903ce2fb2f86b8ed5e7e8183c1f7f6f5074cc9e4514520ad"
+      url "https://github.com/nawwwal/mymind/releases/download/v1.3.5/mymind_1.3.5_macos_apple_silicon.tar.gz"
+      sha256 "c981cb8ec80982517b770b747eecdffc74e99aefeacc31e953c1471be1013031"
     else
       odie "mymind Homebrew releases are Apple Silicon only. Build from source on Intel Mac."
     end
